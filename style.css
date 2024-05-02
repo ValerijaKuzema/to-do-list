@@ -1,9 +1,32 @@
+*{
+  margin: 0;
+}
+
 body {
   background-color: rgb(255,255,255);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.input-field-todo {
+  width: 540px;
+  height: 40px;
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid rgb(200,200,200);
+  border-radius: 20px;
+}
+
+.add-new-todo-btn{
+  width: 540px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: rgb(22, 47, 18);
+  color: rgb(255,255,255);
+  border-radius: 20px;
+}
+
 h1 {
+  margin-top: 30px;
   color: rgb(190,216,186);
   font-weight: lighter;
   font-size: 50px;
@@ -11,8 +34,13 @@ h1 {
 }
 
 .notepad {
-  width: 600px;
+  margin-top: 30px;
+  background-color: rgb(190,216,186);
+  border-left: 1px solid rgb(0,0,0);
+  border-right: 1px solid rgb(0,0,0);
+}
+
+.list-element {
+  width: 540px;
   height: 40px;
-  border: 1px solid rgb(200,200,200);
-  background-color: rgb(242, 237, 160)
 }

@@ -3,16 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to-do list</title>
+    <title>my to-do list</title>
+    <link href="./lib/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- implement bootstrap -->
   </head>
   <body>
-    <h1>my todos</h1>
-    <!-- add oldschool input field  -->
-    <div class="notepad">
-
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-6">
+          <input class="input-field-todo" placeholder="What needs to be done?" autofocus>
+          <button class="add-new-todo-btn">add new todo</button>
+          <h1>my todos</h1>
+          <div class="notepad">
+            <ul>
+              <li class="list-element">wash the dishes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
   </body>
 </html>
