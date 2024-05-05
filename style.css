@@ -46,3 +46,7 @@ h1 {
   list-style-type: none;
   padding: 8px;
 }
+
+.background-color-task {
+  background-color: rgb(212, 216, 186);
+}
