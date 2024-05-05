@@ -42,11 +42,27 @@ h1 {
 
 .list-element {
   width: 540px;
-  height: 40px;
   list-style-type: none;
   padding: 8px;
 }
 
-.background-color-task {
+.to-do-element {
+  display: flex;
+  align-content: center;
+}
+
+input[type="checkbox"] {
+  margin: 4px;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  border-radius: 300px;
+}
+
+.destroy {
+  background-color: rgb(94, 141, 94);
+}
+
+.completed {
   background-color: rgb(212, 216, 186);
 }

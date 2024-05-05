@@ -4,7 +4,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const addButton = document.querySelector(".add-new-todo-btn");
   const inputField = document.querySelector(".input-field-todo");
-  const addToTrash = document.querySelector(".destroy");
+
+  // function for checkbox and destory-button
+
+  const callbackForTask = (liElement) => {
+
+    const checkboxElement = document.querySelector(".checkbox");
+    const cancel = document.querySelector(".destroy");
+
+    // checkboxElement.addEventListener("change", (event) => {
+    //   if (checkboxElement.checked) {
+    //     liElement.classList.add("completed");
+    //   }
+    //   else {
+    //     liElement.classList.remove("completed");
+    //   }
+    // });
+
+    cancel.addEventListener("click", (event) => {
+      liElement.remove();
+    });
+
+  }
+
+
+  //Eventlistener for the addButton
 
   addButton.addEventListener("click", (event) => {
     event.preventDefault();
@@ -37,21 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const ulElement = document.querySelector(".list-group");
     ulElement.prepend(newliElement);
 
+    callbackForTask(newliElement);
+
     inputField.value = "";
-  })
-
-  const checkbox = document.querySelector(".checkbox");
-
-  if (checkbox.classList.checked) {
-    checkbox.classList.add("background-color-task");
-  }
-
-
-  addToTrash.addEventListener("click", () => {
-  //   const removeLiElement = document.getElementsByClassName("list-element");
-  //   removeLiElement.remove;
-
-      console.log("trash was clicked");
   })
 
 });
